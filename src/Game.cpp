@@ -387,18 +387,22 @@ void Game::gameState()
     }
     else if (lost)
     {
-        std::cout << "Remis!";
-    }
-    else
-    {
         if (m_turn == Piece::BLACK)
         {
-            m_turn = Piece::WHITE;
+            std::cout << "Remis!";
         }
         else
         {
-            m_turn = Piece::BLACK;
+            std::cout << "Remis!";
         }
+    }
+    if (m_turn == Piece::BLACK)
+    {
+        m_turn = Piece::WHITE;
+    }
+    else
+    {
+        m_turn = Piece::BLACK;
     }
 
 }
