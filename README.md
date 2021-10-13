@@ -20,6 +20,8 @@
 ## Build process
 
 - Clone the repository
+- copy "sdl2-config.cmake" into your SDL2 folder, which can be places anywhere
+- copy "sdl2-image-config.cmake" into your SDL2_Image folder, which can be placed anywhere
 - type "mkdir build && cd build && cmake .."
 - (open Chess.sln in Visual Studio, right click on Chess in your project folder and do "set as starting project")
 
