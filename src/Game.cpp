@@ -30,10 +30,10 @@ Game::Game(SDL_Handler* handler)
         bb2(new Bishop(Piece::BLACK, std::pair<int, int>(5, 7), handler)),
         bl1(new Bishop(Piece::WHITE, std::pair<int, int>(2, 0), handler)),
         bl2(new Bishop(Piece::WHITE, std::pair<int, int>(5, 0), handler)),
-        kb1(new King(Piece::BLACK, std::pair<int, int>(4, 7), handler)),
-        kl1(new King(Piece::WHITE, std::pair<int, int>(4, 0), handler)),
-        qb1(new Queen(Piece::BLACK, std::pair<int, int>(3, 7), handler)),
-        ql1(new Queen(Piece::WHITE, std::pair<int, int>(3, 0), handler)),
+        kb1(new King(Piece::BLACK, std::pair<int, int>(3, 7), handler)),
+        kl1(new King(Piece::WHITE, std::pair<int, int>(3, 0), handler)),
+        qb1(new Queen(Piece::BLACK, std::pair<int, int>(4, 7), handler)),
+        ql1(new Queen(Piece::WHITE, std::pair<int, int>(4, 0), handler)),
         m_turn(Piece::WHITE),
         m_handler(handler),
         m_checkEnPassant(true)
@@ -53,11 +53,11 @@ Game::Game(SDL_Handler* handler)
     m_field[2][0] = bl1;
     m_field[5][0] = bl2;
 
-    m_field[4][7] = kb1;
-    m_field[4][0] = kl1;
+    m_field[3][7] = kb1;
+    m_field[3][0] = kl1;
 
-    m_field[3][7] = qb1;
-    m_field[3][0] = ql1;
+    m_field[4][7] = qb1;
+    m_field[4][0] = ql1;
 
     m_field[0][1] = pl1;
     m_field[1][1] = pl2;
